@@ -6,19 +6,24 @@
         {
             int[] sorted = SortTwoArrays(arr1, arr2);
             Console.WriteLine("Merged and sorted array:");
-            foreach (int i in sorted) 
-                Console.WriteLine(i);
+            if (sorted != null)
+            {
+                foreach (int i in sorted) 
+                    Console.WriteLine(i);
+            }
         }
 
         private static int[] SortTwoArrays(int[] arr1, int[] arr2)
         {
+            if (arr1 == null && arr1 != null) return [];
+
+            if (arr1 == null || arr1.Length == 0) return arr2;
+            
+            if (arr2 == null || arr2.Length == 0) return arr1;
+
             int size1 = arr1.Length;
             int size2 = arr2.Length;
             int i=0, j=0, k=0;
-
-            if (arr1 == null || size1 == 0) return arr2;
-            
-            if (arr2 == null || size2 == 0) return arr1;
 
             int[] ints = new int[size1 + size2];
 
