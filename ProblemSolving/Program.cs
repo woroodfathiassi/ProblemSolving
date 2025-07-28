@@ -17,3 +17,5 @@ ReverseString.Run("samia");
 Merge2Arrays.Run([1, 4, 11, 15], [3, 4, 31, 51]);
 
 HasOnlyDigits.Run("12s837");
+
+await PrimeNumberFinder.Run(1000000);
