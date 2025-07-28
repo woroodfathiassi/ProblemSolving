@@ -18,4 +18,10 @@ Merge2Arrays.Run([1, 4, 11, 15], [3, 4, 31, 51]);
 
 HasOnlyDigits.Run("12s837");
 
-await PrimeNumberFinder.Run(1000000);
+//await PrimeNumberFinder.Run(1000000);
+
+FindSubsets.Run([0]);
+
+BinarySearchIterative.Run([1, 2, 3, 4, 5], 3);
+
+BinarySearchRecursive.Run([1, 2, 3, 4, 5], 3);

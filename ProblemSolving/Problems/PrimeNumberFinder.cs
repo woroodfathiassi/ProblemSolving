@@ -4,6 +4,12 @@ public class PrimeNumberFinder
 {
     public static async Task Run(int number)
     {
+        if (number < 1)
+        {
+            Console.WriteLine("Please enter a number greater than 1 to find prime numbers.");
+            return;
+        }
+
         List<int> primeNumbers = await FindAllPrimesAsync(number);
         Console.WriteLine($"Prime count: {primeNumbers.Count}");
         //foreach( int i in primeNumbers ) 
